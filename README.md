@@ -2,9 +2,9 @@
 
 > Implementation of [Porter Stemmer Algorithm V2](https://snowballstem.org/algorithms/english/stemmer.html) by Dr Martin F Porter
 
-Wink is a collection of Machine Learning related utilites. Stemming reduces an inflected word into its base form. It is used extensively in Natural Language Processing (NLP).
+**wink-porter2-stemmer** is a part of **wink**, which is a collection of Machine Learning utilites. [Stemming](https://en.wikipedia.org/wiki/Stemming) reduces an inflected word into its base form, for example *learning* to *learn*. It is used extensively in Natural Language Processing (NLP).
 
-
+2
 ## Installation
 Use **npm** to install:
 ```
