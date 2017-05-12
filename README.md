@@ -1,1 +1,1 @@
-# wink-porter2-stemmer
+# wink-porter2-stemmer [![Build Status](https://api.travis-ci.org/decisively/wink-porter2-stemmer.svg?branch=master)](https://travis-ci.org/decisively/wink-porter2-stemmer) [![Coverage Status](https://coveralls.io/repos/github/decisively/wink-porter2-stemmer/badge.svg?branch=master)](https://coveralls.io/github/decisively/wink-porter2-stemmer?branch=master)
