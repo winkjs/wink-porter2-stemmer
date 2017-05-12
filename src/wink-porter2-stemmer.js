@@ -1,5 +1,5 @@
 //     wink-porter2-stemmer
-//     Implementation of Porter V2 Algorithm by Dr Martin F Porter
+//     Implementation of Porter Stemmer Algorithm V2 by Dr Martin F Porter
 //
 //     Copyright (C) 2017  GRAYPE Systems Private Limited
 //
@@ -20,7 +20,7 @@
 //     General Public License along with “wink-porter2-stemmer”.
 //     If not, see <http://www.gnu.org/licenses/>.
 
-// Implements the Porter V2 Algorithm by Dr Martin F Porter.
+// Implements the Porter Stemmer Algorithm V2 by Dr Martin F Porter.
 // Reference: https://snowballstem.org/algorithms/english/stemmer.html
 
 // #### Regex Definitions
