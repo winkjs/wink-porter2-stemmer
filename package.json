@@ -2,6 +2,7 @@
   "name": "wink-porter2-stemmer",
   "version": "1.0.0",
   "description": "Implementation of Porter Stemmer Algorithm V2 by Dr Martin F Porter",
+  "keywords": [ "Stemmer", "Porter Stemmer V2", "NLP", "Natural Language Processing" ],
   "main": "src/wink-porter2-stemmer.js",
   "scripts": {
     "pretest": "npm run lint && npm run hint",
