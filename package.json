@@ -10,10 +10,11 @@
   ],
   "main": "src/wink-porter2-stemmer.js",
   "scripts": {
-    "pretest": "npm run lint && npm run hint",
+    "pretest": "npm run lint && npm run hint && npm run readmedocs",
     "test": "istanbul cover _mocha ./test/",
     "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
-    "docs": "docco -o ./docs/ ./src/*.js",
+    "docs": "docker -i src -o docs --sidebar no",
+    "readmedocs": "documentation readme src/*.js --section=API",
     "hint": "jshint ./src/*.js ./test/*.js",
     "lint": "eslint ./src/*.js ./test/*.js"
   },
@@ -30,7 +31,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.15",
-    "docco": "^0.7.0",
+    "docker": "^1.0.0",
+    "documentation": "^4.0.0-rc.1",
     "eslint": "^3.13.1",
     "istanbul": "^0.4.5",
     "jshint": "^2.9.4",

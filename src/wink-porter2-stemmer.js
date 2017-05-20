@@ -23,7 +23,7 @@
 // Implements the Porter Stemmer Algorithm V2 by Dr Martin F Porter.
 // Reference: https://snowballstem.org/algorithms/english/stemmer.html
 
-// #### Regex Definitions
+// ## Regex Definitions
 
 // Regex definition of `double`.
 var rgxDouble = /(bb|dd|ff|gg|mm|nn|pp|rr|tt)$/;
@@ -111,13 +111,20 @@ var exceptions1 = {
 // Note, these are to be treated as full words.
 var rgxException2 = /^(inning|outing|canning|herring|proceed|exceed|succeed|earring)$/;
 
-// #### Prelude
+// ## Private functions
 
-// Performs in initial pre-processing by transforming thhe input string `s` as
-// per the replacements.
+// ### prelude
+/**
+ * Performs initial pre-processing by transforming the input string `s` as
+ * per the replacements.
+ *
+ * @param {String} s Input string
+ * @return {String} Processed string
+ * @private
+ */
 var prelude = function ( s ) {
   return ( s
-            // Handle y's.
+            // Handle `y`'s.
             .replace( /^y/, '3' )
             .replace( /([aeiou])y/, '$13' )
             // Handle apostrophe.
@@ -127,10 +134,12 @@ var prelude = function ( s ) {
          );
 }; // prelude()
 
-// #### Is Short
-
-// Returns `true` if the input string `s` is a short syllable; otherwise it
-// returns `false`.
+// ### isShort
+/**
+ * @param {String} s Input string
+ * @return {Boolean} `true` if `s` is a short syllable, `false` otherwise
+ * @private
+ */
 var isShort = function ( s ) {
   // (a) a vowel followed by a non-vowel other than w, x or 3 and
   // preceded by a non-vowel, **or** (b) a vowel at the beginning of the word
@@ -145,13 +154,16 @@ var isShort = function ( s ) {
   );
 }; // isShort()
 
-// #### Mark Regions
-
-// Returns the R1 and R2 regions as an object from the input string `s`.
+// ### markRegions
+/**
+ * @param {String} s Input string
+ * @return {Object} the `R1` and `R2` regions as an object from the input string `s`.
+ * @private
+ */
 var markRegions = function ( s ) {
-  // Matches of R1 and R2.
+  // Matches of `R1` and `R2`.
   var m1, m2;
-  // To detect regions i.e. R1 and R2.
+  // To detect regions i.e. `R1` and `R2`.
   var rgxRegions = /[aeiouy]+([^aeiouy]{1}.+)/;
   m1 = rgxRegions.exec( s );
   if ( !m1 ) return ( { r1: '', r2: '' } );
@@ -164,9 +176,12 @@ var markRegions = function ( s ) {
   return ( { r1: m1, r2: m2 } );
 }; // markRegions()
 
-// #### Step Ia
-
-// Step Ia.
+// ### step1a
+/**
+ * @param {String} s Input string
+ * @return {String} Processed string
+ * @private
+ */
 var step1a = function ( s ) {
   var wordPart;
   if ( rgxSFXsses.test( s ) ) return ( s.replace( rgxSFXsses, '$1ss' ) );
@@ -178,9 +193,12 @@ var step1a = function ( s ) {
   return ( s );
 }; // step1a()
 
-// #### Step Ib
-
-// Step Ib.
+// ### step1b
+/**
+ * @param {String} s Input string
+ * @return {String} Processed string
+ * @private
+ */
 var step1b = function ( s ) {
   var rgn = markRegions( s ),
   sd;
@@ -204,16 +222,22 @@ var step1b = function ( s ) {
   return ( s );
 }; // step1b()
 
-// #### Step Ic
-
-// Step Ic.
+// ### step1c
+/**
+ * @param {String} s Input string
+ * @return {String} Processed string
+ * @private
+ */
 var step1c = function ( s ) {
   return ( s.replace( rgxSFXyOR3, '$1i') );
 }; // step1c()
 
-// #### Step II
-
-// Step II.
+// ### step2
+/**
+ * @param {String} s Input string
+ * @return {String} Processed string
+ * @private
+ */
 var step2 = function ( s ) {
   var i, imax,
       rgn = markRegions( s ),
@@ -229,9 +253,12 @@ var step2 = function ( s ) {
   return ( s );
 }; // step2()
 
-// #### Step III
-
-// Step III.
+// ### step3
+/**
+ * @param {String} s Input string
+ * @return {String} Processed string
+ * @private
+ */
 var step3 = function ( s ) {
   var i, imax,
       rgn = markRegions( s ),
@@ -249,9 +276,12 @@ var step3 = function ( s ) {
   return ( s );
 }; // step3()
 
-// #### Step IV
-
-// Step IV.
+// ### step4
+/**
+ * @param {String} s Input string
+ * @return {String} Processed string
+ * @private
+ */
 var step4 = function ( s ) {
   var rgn = markRegions( s );
   var match = s.match( rgxSFXstep4Full );
@@ -267,9 +297,12 @@ var step4 = function ( s ) {
   return ( s );
 }; // step4()
 
-// #### Step V
-
-// Step V.
+// ### step5
+/**
+ * @param {String} s Input string
+ * @return {String} Processed string
+ * @private
+ */
 var step5 = function ( s ) {
   var preceding, rgn;
   // Search for the `e` suffixes.
@@ -292,10 +325,12 @@ var step5 = function ( s ) {
   return ( s );
 }; // step5()
 
-// #### Stem
-
-// The main Porter 2 Stemmer: stems the input string `word` and returns the
-// stemmed `word`.
+// ## Public functions
+// ### stem
+/**
+ * @param {String} word Word to be stemmed
+ * @return {String} Stemmed word
+ */
 var stem = function ( word ) {
   var str = word.toLowerCase();
   if ( str.length < 3 ) return ( str );
