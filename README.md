@@ -3,7 +3,7 @@
 
 > Implementation of [Porter Stemmer Algorithm V2](https://snowballstem.org/algorithms/english/stemmer.html) by Dr Martin F Porter
 
-### [![Build Status](https://api.travis-ci.org/decisively/wink-porter2-stemmer.svg?branch=master)](https://travis-ci.org/decisively/wink-porter2-stemmer) [![Coverage Status](https://coveralls.io/repos/github/decisively/wink-porter2-stemmer/badge.svg?branch=master)](https://coveralls.io/github/decisively/wink-porter2-stemmer?branch=master) [![devDependencies Status](https://david-dm.org/decisively/wink-porter2-stemmer/dev-status.svg)](https://david-dm.org/decisively/wink-porter2-stemmer?type=dev)
+### [![npm version](https://badge.fury.io/js/wink-porter2-stemmer.svg)](https://badge.fury.io/js/wink-porter2-stemmer) [![Build Status](https://api.travis-ci.org/decisively/wink-porter2-stemmer.svg?branch=master)](https://travis-ci.org/decisively/wink-porter2-stemmer) [![Coverage Status](https://coveralls.io/repos/github/decisively/wink-porter2-stemmer/badge.svg?branch=master)](https://coveralls.io/github/decisively/wink-porter2-stemmer?branch=master) [![devDependencies Status](https://david-dm.org/decisively/wink-porter2-stemmer/dev-status.svg)](https://david-dm.org/decisively/wink-porter2-stemmer?type=dev)
 
 <img align="right" src="https://decisively.github.io/wink-logos/logo-title.png" width="100px" >
 
