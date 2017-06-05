@@ -328,8 +328,15 @@ var step5 = function ( s ) {
 // ## Public functions
 // ### stem
 /**
- * @param {String} word Word to be stemmed
- * @return {String} Stemmed word
+ *
+ * Stems an inflected `word` using Porter2 stemming algorithm.
+ *
+ * @arg {string} word — word to be stemmed.
+ * @return {string} — the stemmed word.
+ *
+ * @example
+ * // returns 'consist'
+ * stem( 'consisting' );
  */
 var stem = function ( word ) {
   var str = word.toLowerCase();
