@@ -8,7 +8,7 @@
 
 **wink-porter2-stemmer** is a part of **[wink](https://www.npmjs.com/~sanjaya)**, which is a family of Machine Learning NPM packages. They consist of simple and/or higher order functions that can be combined with NodeJS `stream` and `child processes` to create recipes for analytics driven business solutions.
 
-[Stemming](https://en.wikipedia.org/wiki/Stemming) reduces an inflected word into its base form, for example _learning_ to _learn_. It is used extensively in Natural Language Processing (NLP).
+[Stem](https://en.wikipedia.org/wiki/Stemming) an inflected word into its base form, for example _learning_ to _learn_. It is also being used in [wink-nlp-utils](https://www.npmjs.com/package/wink-nlp-utils) that prepares raw text for Natural Language Processing (NLP).
 
 ## Installation
 
