@@ -39,5 +39,5 @@
     "mocha": "^3.1.0",
     "mocha-lcov-reporter": "^1.2.0"
   },
-  "runkitExampleFilename": "./runkit/example.js"
+  "runkitExampleFilename": "runkit/example.js"
 }
