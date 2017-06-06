@@ -8,7 +8,7 @@
 
 **wink-porter2-stemmer** is a part of **[wink](https://www.npmjs.com/~sanjaya)**, which is a family of Machine Learning NPM packages. They consist of simple and/or higher order functions that can be combined with NodeJS `stream` and `child processes` to create recipes for analytics driven business solutions.
 
-[Stem](https://en.wikipedia.org/wiki/Stemming) an inflected word into its base form, for example _learning_ to _learn_. It is also being used in [wink-nlp-utils](https://www.npmjs.com/package/wink-nlp-utils) that prepares raw text for Natural Language Processing (NLP).
+[Stems](https://en.wikipedia.org/wiki/Stemming) an inflected word into its base form, for example _learning_ to _learn_. It is also being used in [wink-nlp-utils](https://www.npmjs.com/package/wink-nlp-utils) that prepares raw text for Natural Language Processing (NLP).
 
 ## Installation
 
@@ -16,7 +16,7 @@ Use **[npm](https://www.npmjs.com/package/wink-porter2-stemmer)** to install:
 
     npm install wink-porter2-stemmer --save
 
-## Usage
+## Example [![Build Status](https://badge.runkitcdn.com/wink-porter2-stemmer.svg)](https://npm.runkit.com/wink-porter2-stemmer)
 
 ```javascript
 // Load porter stemmer V2
@@ -44,7 +44,7 @@ Stems an inflected `word` using Porter2 stemming algorithm.
 
 -   `word` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** — word to be stemmed.
 
-**Examples**
+**Example**
 
 ```javascript
 // returns 'consist'

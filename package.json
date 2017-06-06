@@ -15,8 +15,8 @@
     "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
     "docs": "docker -i src -o docs --sidebar no",
     "readmedocs": "documentation readme src/*.js --section=API",
-    "hint": "jshint ./src/*.js ./test/*.js",
-    "lint": "eslint ./src/*.js ./test/*.js"
+    "hint": "jshint ./src/*.js ./test/*.js ./runkit/*.js",
+    "lint": "eslint ./src/*.js ./test/*.js ./runkit/*.js"
   },
   "repository": {
     "type": "git",
@@ -38,5 +38,6 @@
     "jshint": "^2.9.4",
     "mocha": "^3.1.0",
     "mocha-lcov-reporter": "^1.2.0"
-  }
+  },
+  "runkitExampleFilename": "./runkit/example.js"
 }
