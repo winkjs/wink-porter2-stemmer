@@ -44,7 +44,7 @@ Stems an inflected `word` using Porter2 stemming algorithm.
 
 -   `word` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** — word to be stemmed.
 
-**Example**
+**Examples**
 
 ```javascript
 // returns 'consist'
