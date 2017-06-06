@@ -1,6 +1,6 @@
 {
   "name": "wink-porter2-stemmer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Implementation of Porter Stemmer Algorithm V2 by Dr Martin F Porter",
   "keywords": [
     "Stemmer",
@@ -39,5 +39,5 @@
     "mocha": "^3.1.0",
     "mocha-lcov-reporter": "^1.2.0"
   },
-  "runkitExampleFilename": "runkit/example.js"
+  "runkitExampleFilename": "./runkit/example.js"
 }

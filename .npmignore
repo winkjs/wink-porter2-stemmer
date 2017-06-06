@@ -1,6 +1,5 @@
 test
 docs
-runkit
 .eslintrc.json
 .jshintrc
 .travis.yml
