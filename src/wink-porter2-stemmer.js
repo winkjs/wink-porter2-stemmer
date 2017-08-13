@@ -331,7 +331,7 @@ var step5 = function ( s ) {
  *
  * Stems an inflected `word` using Porter2 stemming algorithm.
  *
- * @arg {string} word — word to be stemmed.
+ * @param {string} word — word to be stemmed.
  * @return {string} — the stemmed word.
  *
  * @example
