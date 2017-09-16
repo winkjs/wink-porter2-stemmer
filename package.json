@@ -1,6 +1,6 @@
 {
   "name": "wink-porter2-stemmer",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Implementation of Porter Stemmer Algorithm V2 by Dr Martin F Porter",
   "keywords": [
     "Stemmer",
