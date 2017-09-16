@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/decisively/wink-porter2-stemmer.git"
+    "url": "git+https://github.com/winkjs/wink-porter2-stemmer.git"
   },
   "author": "Sanjaya Kumar Saxena",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/decisively/wink-porter2-stemmer/issues"
+    "url": "https://github.com/winkjs/wink-porter2-stemmer/issues"
   },
-  "homepage": "https://github.com/decisively/wink-porter2-stemmer#readme",
+  "homepage": "https://github.com/winkjs/wink-porter2-stemmer#readme",
   "devDependencies": {
     "chai": "^4.1.1",
     "coveralls": "^2.11.15",
