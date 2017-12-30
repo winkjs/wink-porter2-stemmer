@@ -335,8 +335,8 @@ var step5 = function ( s ) {
  * @return {string} — the stemmed word.
  *
  * @example
- * // returns 'consist'
  * stem( 'consisting' );
+ * // -> consist
  */
 var stem = function ( word ) {
   var str = word.toLowerCase();

@@ -1,6 +1,6 @@
 # wink-porter2-stemmer
 
-> Implementation of [Porter Stemmer Algorithm V2](https://snowballstem.org/algorithms/english/stemmer.html) by Dr Martin F Porter
+Implementation of [Porter Stemmer Algorithm V2](https://snowballstem.org/algorithms/english/stemmer.html) by Dr Martin F Porter
 
 ### [![Build Status](https://api.travis-ci.org/winkjs/wink-porter2-stemmer.svg?branch=master)](https://travis-ci.org/winkjs/wink-porter2-stemmer) [![Coverage Status](https://coveralls.io/repos/github/winkjs/wink-porter2-stemmer/badge.svg?branch=master)](https://coveralls.io/github/winkjs/wink-porter2-stemmer?branch=master) [![Inline docs](http://inch-ci.org/github/winkjs/wink-porter2-stemmer.svg?branch=master)](http://inch-ci.org/github/winkjs/wink-porter2-stemmer) [![devDependencies Status](https://david-dm.org/winkjs/wink-porter2-stemmer/dev-status.svg)](https://david-dm.org/winkjs/wink-porter2-stemmer?type=dev)
 
@@ -49,8 +49,8 @@ Stems an inflected `word` using Porter2 stemming algorithm.
 **Examples**
 
 ```javascript
-// returns 'consist'
 stem( 'consisting' );
+// -> consist
 ```
 
 Returns **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** — the stemmed word.
