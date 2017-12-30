@@ -6,11 +6,11 @@
 
 <img align="right" src="https://decisively.github.io/wink-logos/logo-title.png" width="100px" >
 
-[Stem](https://en.wikipedia.org/wiki/Stemming) an inflected word into its base form using **`wink-porter2-stemmer`**. It is a part of _[wink](https://www.npmjs.com/~sanjaya)_ — a growing family of high quality packages for Statistical Analysis, Natural Language Processing and Machine Learning in NodeJS.
+[Stem](https://en.wikipedia.org/wiki/Stemming) an inflected word into its base form using **`wink-porter2-stemmer`**. It is a part of [wink](https://www.npmjs.com/~sanjaya) — a growing family of high quality packages for Statistical Analysis, Natural Language Processing and Machine Learning in NodeJS.
 
 ## Installation
 
-Use **[npm](https://www.npmjs.com/package/wink-porter2-stemmer)** to install:
+Use [npm](https://www.npmjs.com/package/wink-porter2-stemmer) to install:
 
     npm install wink-porter2-stemmer --save
 
@@ -61,7 +61,7 @@ If you spot a bug and the same has not yet been reported, raise a new [issue](ht
 
 ## Copyright & License
 
-**wink-porter2-stemmer** is copyright 2017 GRAYPE Systems Private Limited.
+**wink-porter2-stemmer** is copyright 2017 [GRAYPE Systems Private Limited](http://graype.in/).
 
 It is licensed under the under the terms of the GNU Affero General Public License as published by the Free
 Software Foundation, version 3 of the License.
