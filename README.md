@@ -6,7 +6,7 @@ Implementation of [Porter Stemmer Algorithm V2](https://snowballstem.org/algorit
 
 <img align="right" src="https://decisively.github.io/wink-logos/logo-title.png" width="100px" >
 
-[Stem](https://en.wikipedia.org/wiki/Stemming) an inflected word into its base form using **`wink-porter2-stemmer`**. It is a part of [wink](https://www.npmjs.com/~sanjaya) — a growing family of high quality packages for Statistical Analysis, Natural Language Processing and Machine Learning in NodeJS.
+[Stem](https://en.wikipedia.org/wiki/Stemming) an inflected word into its base form using **`wink-porter2-stemmer`**. It is a part of [wink](http://winkjs.org/) — a growing family of high quality packages for Statistical Analysis, Natural Language Processing and Machine Learning in NodeJS.
 
 ## Installation
 
