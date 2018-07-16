@@ -2,7 +2,7 @@
 
 Implementation of [Porter Stemmer Algorithm V2](https://snowballstem.org/algorithms/english/stemmer.html) by Dr Martin F Porter
 
-### [![Build Status](https://api.travis-ci.org/winkjs/wink-porter2-stemmer.svg?branch=master)](https://travis-ci.org/winkjs/wink-porter2-stemmer) [![Coverage Status](https://coveralls.io/repos/github/winkjs/wink-porter2-stemmer/badge.svg?branch=master)](https://coveralls.io/github/winkjs/wink-porter2-stemmer?branch=master) [![Inline docs](http://inch-ci.org/github/winkjs/wink-porter2-stemmer.svg?branch=master)](http://inch-ci.org/github/winkjs/wink-porter2-stemmer) [![devDependencies Status](https://david-dm.org/winkjs/wink-porter2-stemmer/dev-status.svg)](https://david-dm.org/winkjs/wink-porter2-stemmer?type=dev)
+### [![Build Status](https://api.travis-ci.org/winkjs/wink-porter2-stemmer.svg?branch=master)](https://travis-ci.org/winkjs/wink-porter2-stemmer) [![Coverage Status](https://coveralls.io/repos/github/winkjs/wink-porter2-stemmer/badge.svg?branch=master)](https://coveralls.io/github/winkjs/wink-porter2-stemmer?branch=master) [![Inline docs](http://inch-ci.org/github/winkjs/wink-porter2-stemmer.svg?branch=master)](http://inch-ci.org/github/winkjs/wink-porter2-stemmer) [![devDependencies Status](https://david-dm.org/winkjs/wink-porter2-stemmer/dev-status.svg)](https://david-dm.org/winkjs/wink-porter2-stemmer?type=dev) [![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/winkjs/Lobby)
 
 <img align="right" src="https://decisively.github.io/wink-logos/logo-title.png" width="100px" >
 
