@@ -1,24 +1,27 @@
 //     wink-porter2-stemmer
 //     Implementation of Porter Stemmer Algorithm V2 by Dr Martin F Porter
 //
-//     Copyright (C) 2017  GRAYPE Systems Private Limited
+//     Copyright (C) 2017-18  GRAYPE Systems Private Limited
 //
 //     This file is part of “wink-porter2-stemmer”.
 //
-//     “wink-porter2-stemmer” is free software: you can redistribute it
-//     and/or modify it under the terms of the GNU Affero
-//     General Public License as published by the Free
-//     Software Foundation, version 3 of the License.
+//     Permission is hereby granted, free of charge, to any person obtaining a
+//     copy of this software and associated documentation files (the "Software"),
+//     to deal in the Software without restriction, including without limitation
+//     the rights to use, copy, modify, merge, publish, distribute, sublicense,
+//     and/or sell copies of the Software, and to permit persons to whom the
+//     Software is furnished to do so, subject to the following conditions:
 //
-//     “wink-porter2-stemmer” is distributed in the hope that it will
-//     be useful, but WITHOUT ANY WARRANTY; without even
-//     the implied warranty of MERCHANTABILITY or FITNESS
-//     FOR A PARTICULAR PURPOSE.  See the GNU Affero General
-//     Public License for more details.
+//     The above copyright notice and this permission notice shall be included
+//     in all copies or substantial portions of the Software.
 //
-//     You should have received a copy of the GNU Affero
-//     General Public License along with “wink-porter2-stemmer”.
-//     If not, see <http://www.gnu.org/licenses/>.
+//     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+//     OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+//     THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+//     FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+//     DEALINGS IN THE SOFTWARE.
 
 // Implements the Porter Stemmer Algorithm V2 by Dr Martin F Porter.
 // Reference: https://snowballstem.org/algorithms/english/stemmer.html
@@ -169,7 +172,7 @@ var markRegions = function ( s ) {
   if ( !m1 ) return ( { r1: '', r2: '' } );
   m1 = m1[ 1 ].slice( 1 );
   // Handle exceptions here to prevent over stemming.
-  m1 = ( /^(gener|commun|arsen)/.test( s ) ) ? s.replace( /^(gener|commun|arsen)(.*)/, '$2') : m1;
+  m1 = ( ( /^(gener|commun|arsen)/ ).test( s ) ) ? s.replace( /^(gener|commun|arsen)(.*)/, '$2') : m1;
   m2 = rgxRegions.exec( m1 );
   if ( !m2 ) return ( { r1: m1, r2: '' } );
   m2 = m2[ 1 ].slice( 1 );
@@ -189,7 +192,7 @@ var step1a = function ( s ) {
   if ( rgxSFXiedORies1.test( s ) ) return ( s.replace( rgxSFXiedORies1, '$1ie' ) );
   if ( rgxSFXusORss.test( s ) ) return ( s );
   wordPart = s.replace( rgxSFXs, '$1' );
-  if ( /[aeiuouy](.+)$/.test( wordPart ) ) return ( s.replace( rgxSFXs, '$1' ) );
+  if ( ( /[aeiuouy](.+)$/ ).test( wordPart ) ) return ( s.replace( rgxSFXs, '$1' ) );
   return ( s );
 }; // step1a()
 
@@ -271,7 +274,7 @@ var step3 = function ( s ) {
       us = s.replace( rgxSFXstep3WithReplacements[ i ].rgx, rgxSFXstep3WithReplacements[ i ].replacement );
       if ( s !== us ) return ( us );
     }
-    if ( /ative/.test( rgn.r2 ) ) return s.replace( /ative$/, '' );
+    if ( ( /ative/ ).test( rgn.r2 ) ) return s.replace( /ative$/, '' );
   }
   return ( s );
 }; // step3()
@@ -307,16 +310,16 @@ var step5 = function ( s ) {
   var preceding, rgn;
   // Search for the `e` suffixes.
   rgn = markRegions( s );
-  if ( /e$/i.test( s ) ) {
+  if ( ( /e$/i ).test( s ) ) {
     preceding = s.replace( /e$/, '' );
     return (
               // Found: delete if in R2, or in R1 and not preceded by a short syllable
-              /e/.test( rgn.r2 ) || ( /e/.test( rgn.r1 ) && !isShort( preceding ) ) ?
+              ( /e/ ).test( rgn.r2 ) || ( ( /e/ ).test( rgn.r1 ) && !isShort( preceding ) ) ?
               preceding : s
            );
   }
   // Search for the `l` suffixes.
-  if ( /l$/.test( s ) ) {
+  if ( ( /l$/ ).test( s ) ) {
     rgn = markRegions( s );
     // Found: delete if in R2
     return ( rgn.r2 && ( /l$/ ).test( rgn.r2 ) ? s.replace( ( /ll$/ ), 'l' ) : s );
