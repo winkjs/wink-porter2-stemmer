@@ -37,16 +37,18 @@ console.log( stem( 'stemming' ) );
 #### Table of Contents
 
 -   [stem](#stem)
+    -   [Parameters](#parameters)
+    -   [Examples](#examples)
 
 ### stem
 
 Stems an inflected `word` using Porter2 stemming algorithm.
 
-**Parameters**
+#### Parameters
 
 -   `word` **[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)** — word to be stemmed.
 
-**Examples**
+#### Examples
 
 ```javascript
 stem( 'consisting' );

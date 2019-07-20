@@ -50,4 +50,8 @@ describe( 'stem()', function () {
       expect( stem( word ) ).to.deep.equal( output[ i ] );
     } );
   } );
+
+  it( 'should return "constructor" for the input as "constructor" and not a function!', function () {
+    expect( stem( 'constructor' ) ).to.equal( 'constructor' );
+  } );
 } );

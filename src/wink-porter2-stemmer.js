@@ -89,27 +89,27 @@ var rgxSFXstep4 = /(ement|ance|ence|able|ible|ment|ant|ent|ism|ate|iti|ous|ive|i
 var rgxSFXstep4Full = /(ement|ance|ence|able|ible|ment|ant|ent|ism|ate|iti|ous|ive|ize|ion|al|er|ic)$/;
 var rgxSFXstep4ion = /(.*)(s|t)(ion)$/;
 // Exceptions Set I.
-var exceptions1 = {
-  // Mapped!
-  'skis': 'ski',
-  'skies': 'sky',
-  'dying': 'die',
-  'lying': 'lie',
-  'tying': 'tie',
-  'idly': 'idl',
-  'gently': 'gentl',
-  'ugly': 'ugli',
-  'early': 'earli',
-  'only': 'onli',
-  'singly': 'singl',
-  // Invariants!
-  'sky': 'sky',
-  'news': 'news',
-  'atlas': 'atlas',
-  'cosmos': 'cosmos',
-  'bias': 'bias',
-  'andes': 'andes'
-};
+var exceptions1 = Object.create( null );
+// Mapped!
+exceptions1.skis = 'ski';
+exceptions1.skies = 'sky';
+exceptions1.dying = 'die';
+exceptions1.lying = 'lie';
+exceptions1.tying = 'tie';
+exceptions1.idly = 'idl';
+exceptions1.gently = 'gentl';
+exceptions1.ugly = 'ugli';
+exceptions1.early = 'earli';
+exceptions1.only = 'onli';
+exceptions1.singly = 'singl';
+// Invariants!
+exceptions1.sky = 'sky';
+exceptions1.news = 'news';
+exceptions1.atlas = 'atlas';
+exceptions1.cosmos = 'cosmos';
+exceptions1.bias = 'bias';
+exceptions1.andes = 'andes';
+
 // Exceptions Set II.
 // Note, these are to be treated as full words.
 var rgxException2 = /^(inning|outing|canning|herring|proceed|exceed|succeed|earring)$/;
