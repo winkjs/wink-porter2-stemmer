@@ -1,7 +1,7 @@
 //     wink-porter2-stemmer
 //     Implementation of Porter Stemmer Algorithm V2 by Dr Martin F Porter
 //
-//     Copyright (C) 2017-18  GRAYPE Systems Private Limited
+//     Copyright (C) 2017-19  GRAYPE Systems Private Limited
 //
 //     This file is part of “wink-porter2-stemmer”.
 //

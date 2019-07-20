@@ -67,6 +67,6 @@ If you spot a bug and the same has not yet been reported, raise a new [issue](ht
 
 ## Copyright & License
 
-**wink-porter2-stemmer** is copyright 2017-18 [GRAYPE Systems Private Limited](http://graype.in/).
+**wink-porter2-stemmer** is copyright 2017-19 [GRAYPE Systems Private Limited](http://graype.in/).
 
 It is licensed under the terms of the MIT License.
