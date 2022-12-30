@@ -36,7 +36,7 @@
     "documentation": "^12.0.2",
     "eslint": "^6.0.1",
     "istanbul": "^0.4.5",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "mocha-lcov-reporter": "^1.3.0"
   },
   "runkitExampleFilename": "./runkit/example.js"
